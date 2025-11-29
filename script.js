@@ -902,6 +902,178 @@ notificationStyle.textContent = `
 document.head.appendChild(notificationStyle);
 
 // ===================================
+// whatsapp widget 
+// ===================================
+
+// ===================================
+// WHATSAPP WIDGET INTEGRATION
+// ===================================
+function initializeWhatsAppWidget() {
+    // Check if widget already exists
+    if (document.getElementById('widgetsContainer')) {
+        return;
+    }
+
+    // Create and inject CSS
+    const head = document.getElementsByTagName('HEAD')[0];
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'https://social-widgets.netlify.app/css/widget.css';
+    head.appendChild(link);
+
+    // Create main widget container
+    const mainDiv = document.createElement("div");
+    mainDiv.id = "widgetsContainer";
+    mainDiv.innerHTML = `
+        <ul id="iconsList" style="display: none">
+            <li>
+                <a class="widget-circle widget-whatsapp" target="_blank" 
+                   href="https://wa.me/923131159582?text=Hello%20I%20saw%20your%20site%20and%20want%20to%20know%20more">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" 
+                         class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+        <button id="whatsappToggle" class="whatsapp-toggle-btn">
+            <i class="fab fa-whatsapp"></i>
+        </button>
+    `;
+    
+    // Custom styling for better integration
+    mainDiv.style.cssText = `
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: fixed;
+        right: 25px;
+        bottom: 30px;
+        width: auto;
+        z-index: 9998;
+        gap: 10px;
+    `;
+
+    document.body.appendChild(mainDiv);
+
+    // Add custom styles for better appearance
+    const customStyles = `
+        .whatsapp-toggle-btn {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+            font-size: 24px;
+            z-index: 9999;
+        }
+        
+        .whatsapp-toggle-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+        }
+        
+        #iconsList {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: none;
+            animation: slideUp 0.3s ease;
+        }
+        
+        #iconsList li {
+            margin-bottom: 10px;
+        }
+        
+        .widget-circle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+        }
+        
+        .widget-circle:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideDown {
+            from {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+        }
+    `;
+
+    const styleSheet = document.createElement('style');
+    styleSheet.textContent = customStyles;
+    document.head.appendChild(styleSheet);
+
+    // Toggle functionality
+    const toggleBtn = document.getElementById('whatsappToggle');
+    const iconsList = document.getElementById('iconsList');
+
+    toggleBtn.addEventListener('click', function() {
+        const isVisible = iconsList.style.display === 'block';
+        
+        if (isVisible) {
+            iconsList.style.animation = 'slideDown 0.3s ease';
+            setTimeout(() => {
+                iconsList.style.display = 'none';
+            }, 250);
+        } else {
+            iconsList.style.display = 'block';
+            iconsList.style.animation = 'slideUp 0.3s ease';
+        }
+    });
+
+    // Close when clicking outside
+    document.addEventListener('click', function(event) {
+        if (!mainDiv.contains(event.target) && iconsList.style.display === 'block') {
+            iconsList.style.animation = 'slideDown 0.3s ease';
+            setTimeout(() => {
+                iconsList.style.display = 'none';
+            }, 250);
+        }
+    });
+}
+
+// Initialize WhatsApp widget when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    initializeWhatsAppWidget();
+});
+
+// ===================================
 // CONSOLE EASTER EGG
 // ===================================
 console.log(
