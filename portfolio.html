@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ali Shafique - Full Stack Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">MA Shafique</div>
+            
+            <!-- Desktop Menu -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#" class="btn-hire" id="hireMeBtn">Hire Me</a></li>
+            </ul>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content reveal">
+                <div class="badge">💼 Available for Freelance Projects</div>
+                
+                <h1 class="hero-title">
+                    Transform Your Ideas Into
+                    <span class="gradient-text">Digital Reality</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Full-Stack Developer specializing in MERN Stack & Flutter. Building scalable web and mobile solutions that drive real business results.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">
+                        View My Services <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#about" class="btn btn-outline">Learn More</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/muhammad-ali-shafique-6b52b52aa" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:malishafique2002@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+923131159582">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card reveal">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education Excellence</h3>
+                    <div class="education-info">
+                        <p><i class="fas fa-book"></i> BS Software Engineering</p>
+                        <p><i class="fas fa-university"></i> Muhammad Ali Jinnah University</p>
+                        <p><i class="fas fa-chart-line"></i> CGPA: 3.66/4.0</p>
+                        <p><i class="fas fa-award"></i> Pre-Medical: 89%</p>
+                    </div>
+                </div>
+
+                <div class="about-content reveal">
+                    <p class="about-text">
+                        I'm a passionate <span class="highlight-blue">Full-Stack Developer</span> and 
+                        <span class="highlight-pink">Mobile App Specialist</span> with expertise in building modern, 
+                        scalable applications that solve real-world problems.
+                    </p>
+                    
+                    <p class="about-text">
+                        With a strong foundation in <span class="highlight-blue">MERN Stack</span> and 
+                        <span class="highlight-pink">Flutter</span>, I've successfully delivered projects ranging 
+                        from complex tracking systems to intuitive mobile applications.
+                    </p>
+
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <i class="fas fa-trophy"></i>
+                            <h4 class="stat-number" data-target="5">0</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-box">
+                            <i class="fas fa-code"></i>
+                            <h4 class="stat-number" data-target="3">0</h4>
+                            <p>Tech Stacks Mastered</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Cutting-edge technologies I work with</p>
+            </div>
+
+            <div class="skills-container reveal">
+                <!-- Skill 1: MERN Stack -->
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <i class="fas fa-code skill-icon"></i>
+                            <span class="skill-name">MERN Stack</span>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 2: Flutter -->
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <i class="fas fa-mobile-alt skill-icon"></i>
+                            <span class="skill-name">Flutter</span>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 3: Firebase -->
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <i class="fas fa-database skill-icon"></i>
+                            <span class="skill-name">Firebase</span>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 4: WordPress -->
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <i class="fab fa-wordpress skill-icon"></i>
+                            <span class="skill-name">WordPress</span>
+                        </div>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 5: JavaScript -->
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <i class="fab fa-js skill-icon"></i>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="88"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 6: React/Next.js -->
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <div class="skill-info">
+                            <i class="fab fa-react skill-icon"></i>
+                            <span class="skill-name">React/Next.js</span>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Technologies -->
+            <div class="tech-tags reveal">
+                <h3 class="tech-title">Additional Technologies</h3>
+                <div class="tags-container">
+                    <span class="tag">C++</span>
+                    <span class="tag">C#</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">HTML/CSS</span>
+                    <span class="tag">Bootstrap</span>
+                    <span class="tag">Next.js</span>
+                    <span class="tag">Express.js</span>
+                    <span class="tag">Firebase</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">WinForms</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Services I Offer</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Comprehensive solutions for your digital needs</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Full-Stack Web Development</h3>
+                    <p>Building scalable web applications using MERN stack with modern UI/UX practices</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> React & Next.js</li>
+                        <li><i class="fas fa-check"></i> Node.js & Express</li>
+                        <li><i class="fas fa-check"></i> MongoDB & Firebase</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-screen"></i>
+                    </div>
+                    <h3>Mobile App Development</h3>
+                    <p>Cross-platform mobile apps using Flutter with seamless Firebase integration</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> iOS & Android</li>
+                        <li><i class="fas fa-check"></i> Firebase Auth</li>
+                        <li><i class="fas fa-check"></i> Real-time Database</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fab fa-wordpress"></i>
+                    </div>
+                    <h3>CMS & WordPress</h3>
+                    <p>Custom WordPress solutions and content management system development</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Custom Themes</li>
+                        <li><i class="fas fa-check"></i> Plugin Development</li>
+                        <li><i class="fas fa-check"></i> E-commerce Setup</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend Solutions</h3>
+                    <p>Robust backend systems with RESTful APIs and database architecture</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> API Development</li>
+                        <li><i class="fas fa-check"></i> Database Design</li>
+                        <li><i class="fas fa-check"></i> Cloud Integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Experience Timeline</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">My journey in software development</p>
+            </div>
+
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2025</div>
+                        <h3>Flutter Developer</h3>
+                        <p>Developed multiple mobile applications including Notes App and Memes App with Firebase integration</p>
+                        <span class="timeline-badge">Self-learned through YouTube & practical projects</span>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2024</div>
+                        <h3>Full-Stack Developer</h3>
+                        <p>Built Bus Tracking App using MERN Stack with real-time location tracking</p>
+                        <span class="timeline-badge">Admin, Passenger & Driver portals</span>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2024</div>
+                        <h3>Desktop Application Developer</h3>
+                        <p>Created Gym Management System using Windows Forms with modular design</p>
+                        <span class="timeline-badge">3 separate portals: Admin, User, Trainer</span>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023</div>
+                        <h3>Started University</h3>
+                        <p>Began BS Software Engineering at Muhammad Ali Jinnah University</p>
+                        <span class="timeline-badge">Current CGPA: 3.66</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -----------------------------------------------------------------------------------********** -->
+     <!-- ===================================
+     PROJECTS SECTION (CAROUSEL SLIDER)
+     =================================== -->
+<section id="projects" class="projects-section">
+    <div class="container">
+        <div class="section-header reveal">
+            <h2 class="section-title">My Projects</h2>
+            <div class="title-underline"></div>
+            <p class="section-subtitle">Showcase of my best work and achievements</p>
+        </div>
+
+        <div class="projects-carousel reveal">
+            <!-- Carousel Container -->
+            <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack">
+                    
+                    <!-- Project 1: Bus Tracking App -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <i class="fas fa-bus fa-4x"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-tag">MERN Stack</span>
+                            <h3>Bus Tracking App</h3>
+                            <p>Real-time bus tracking system with Admin, Passenger, and Driver portals. Features live location tracking and dynamic route management.</p>
+                            <div class="project-tech">
+                                <span>MongoDB</span>
+                                <span>Express.js</span>
+                                <span>React</span>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> View Demo</a>
+                                <a href="#" class="project-btn"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Notes App -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <i class="fas fa-sticky-note fa-4x"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-tag">Flutter</span>
+                            <h3>Notes App</h3>
+                            <p>Feature-rich mobile notes application with Firebase Realtime Database. Includes full CRUD operations with beautiful UI/UX design.</p>
+                            <div class="project-tech">
+                                <span>Flutter</span>
+                                <span>Firebase</span>
+                                <span>Dart</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> View Demo</a>
+                                <a href="#" class="project-btn"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Gym Management System -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <i class="fas fa-dumbbell fa-4x"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-tag">Windows Forms</span>
+                            <h3>Gym Management System</h3>
+                            <p>Comprehensive gym management desktop application with separate portals for Admin, Users, and Trainers. Features member registration and session scheduling.</p>
+                            <div class="project-tech">
+                                <span>C#</span>
+                                <span>WinForms</span>
+                                <span>.NET</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> View Demo</a>
+                                <a href="#" class="project-btn"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Memes App -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <i class="fas fa-laugh fa-4x"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-tag">Flutter + API</span>
+                            <h3>Memes App</h3>
+                            <p>Lightweight memes application with GitHub API integration. Browse and enjoy endless memes without database dependency.</p>
+                            <div class="project-tech">
+                                <span>Flutter</span>
+                                <span>API Integration</span>
+                                <span>Dart</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> View Demo</a>
+                                <a href="#" class="project-btn"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: IQ Checker App -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <i class="fas fa-brain fa-4x"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-tag">Console App</span>
+                            <h3>IQ Checker App</h3>
+                            <p>Console-based application using OOP principles. Features logical assessment with user-friendly interaction and scoring system.</p>
+                            <div class="project-tech">
+                                <span>C++</span>
+                                <span>OOP</span>
+                                <span>Algorithms</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> View Demo</a>
+                                <a href="#" class="project-btn"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-btn carousel-prev" id="carouselPrev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn carousel-next" id="carouselNext">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- Carousel Dots -->
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================================
+     CASE STUDY SECTION
+     =================================== -->
+<section id="case-study" class="case-study-section">
+    <div class="container">
+        <div class="section-header reveal">
+            <h2 class="section-title">Featured Case Study</h2>
+            <div class="title-underline"></div>
+            <p class="section-subtitle">Deep dive into a project that made an impact</p>
+        </div>
+
+        <div class="case-study-container reveal">
+            <div class="case-study-content">
+                <div class="case-study-badge">Featured Project</div>
+                <h3 class="case-study-title">Bus Tracking System - Real-Time Solution</h3>
+                
+                <div class="case-study-section">
+                    <h4><i class="fas fa-bullseye"></i> The Challenge</h4>
+                    <p>Transportation management needed a modern solution for real-time tracking and efficient route management. Traditional systems lacked user-friendly interfaces and live updates.</p>
+                </div>
+
+                <div class="case-study-section">
+                    <h4><i class="fas fa-lightbulb"></i> The Solution</h4>
+                    <p>Developed a comprehensive MERN Stack application with three distinct portals (Admin, Passenger, Driver). Implemented real-time location tracking using WebSocket technology and dynamic route assignment algorithms.</p>
+                </div>
+
+                <div class="case-study-section">
+                    <h4><i class="fas fa-chart-line"></i> The Results</h4>
+                    <ul class="case-study-results">
+                        <li><i class="fas fa-check-circle"></i> Real-time tracking with 99% accuracy</li>
+                        <li><i class="fas fa-check-circle"></i> Improved operational efficiency by 40%</li>
+                        <li><i class="fas fa-check-circle"></i> User-friendly interface with positive feedback</li>
+                        <li><i class="fas fa-check-circle"></i> Scalable architecture for future expansion</li>
+                    </ul>
+                </div>
+
+                <div class="case-study-tech-stack">
+                    <h4>Technology Stack</h4>
+                    <div class="tech-stack-grid">
+                        <div class="tech-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-node"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-plug"></i>
+                            <span>Socket.io</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-study-image">
+                <div class="case-study-visual">
+                    <i class="fas fa-bus fa-10x"></i>
+                    <div class="visual-overlay">
+                        <div class="stat-badge">
+                            <h5>Real-Time</h5>
+                            <p>Location Tracking</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================================
+     TESTIMONIALS SECTION
+     =================================== -->
+<section id="testimonials" class="testimonials-section">
+    <div class="container">
+        <div class="section-header reveal">
+            <h2 class="section-title">What People Say</h2>
+            <div class="title-underline"></div>
+            <p class="section-subtitle">Testimonials from colleagues and clients</p>
+        </div>
+
+        <div class="testimonials-grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card reveal">
+                <div class="testimonial-quote">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">
+                    "Ali's work on our bus tracking system exceeded expectations. His expertise in MERN stack and attention to detail resulted in a robust, scalable solution that our team loves using."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="author-info">
+                        <h4>Project Supervisor</h4>
+                        <p>Transportation Dept.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card reveal">
+                <div class="testimonial-quote">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">
+                    "Working with Ali on mobile app development was fantastic. His Flutter skills are impressive, and he delivered our Notes app with clean code and beautiful UI ahead of schedule."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="author-info">
+                        <h4>Team Lead</h4>
+                        <p>Mobile Development</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card reveal">
+                <div class="testimonial-quote">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">
+                    "Ali is a dedicated developer with strong problem-solving skills. His Gym Management System demonstrated excellent understanding of software architecture and user experience design."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="author-info">
+                        <h4>Academic Advisor</h4>
+                        <p>MAJU University</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================================
+     STATS SECTION (ANIMATED COUNTERS)
+     =================================== -->
+<section id="stats" class="stats-section">
+    <div class="stats-overlay"></div>
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item reveal">
+                <i class="fas fa-project-diagram"></i>
+                <h3 class="counter" data-target="5">0</h3>
+                <p>Projects Completed</p>
+            </div>
+
+            <div class="stat-item reveal">
+                <i class="fas fa-code"></i>
+                <h3 class="counter" data-target="10000">0</h3>
+                <p>Lines of Code</p>
+            </div>
+
+            <div class="stat-item reveal">
+                <i class="fas fa-coffee"></i>
+                <h3 class="counter" data-target="500">0</h3>
+                <p>Cups of Coffee</p>
+            </div>
+
+            <div class="stat-item reveal">
+                <i class="fas fa-clock"></i>
+                <h3 class="counter" data-target="1000">0</h3>
+                <p>Hours Coded</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================================
+     CONTACT FORM SECTION
+     =================================== -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <div class="section-header reveal">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="title-underline"></div>
+            <p class="section-subtitle">Let's discuss your next project</p>
+        </div>
+
+        <div class="contact-container">
+            <!-- Contact Info -->
+            <div class="contact-info reveal">
+                <h3>Let's Work Together</h3>
+                <p>Have a project in mind? I'm available for freelance work and exciting opportunities. Let's connect!</p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>malishafique2002@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+92 313 1159582</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Karachi, Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-social">
+                    <a href="https://www.linkedin.com/in/muhammad-ali-shafique-6b52b52aa" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:malishafique2002@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+923131159582"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-container reveal">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        <span class="error-message" id="subjectError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+
+                    <div class="form-success" id="formSuccess">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Message sent successfully! I'll get back to you soon.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================================
+     FOOTER
+     =================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-logo">MA Shafique</h3>
+                <p class="footer-description">
+                    Full-Stack Developer specializing in MERN Stack & Flutter. Building digital solutions that make a difference.
+                </p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/muhammad-ali-shafique-6b52b52aa" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:malishafique2002@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+923131159582">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#services">Web Development</a></li>
+                    <li><a href="#services">Mobile Apps</a></li>
+                    <li><a href="#services">WordPress</a></li>
+                    <li><a href="#services">Backend Solutions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:malishafique2002@gmail.com">malishafique2002@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+923131159582">+92 313 1159582</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Karachi, Pakistan</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Muhammad Ali Shafique. All rights reserved.</p>
+            <p>Designed & Built with <i class="fas fa-heart"></i> by MA Shafique</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll to Top Button -->
+<button class="scroll-top" id="scrollTop">
+    <i class="fas fa-arrow-up"></i>
+</button>
+<!-- --------------------***************************** -->
+    <!-- Hire Me Modal -->
+    <div class="modal" id="hireModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <h3 class="modal-title">Let's Work Together!</h3>
+            <p class="modal-text">Ready to turn your vision into reality? Get in touch and let's discuss your project!</p>
+
+            <div class="contact-options">
+                <a href="mailto:malishafique2002@gmail.com" class="contact-option">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <p class="contact-label">Email</p>
+                        <p class="contact-value">malishafique2002@gmail.com</p>
+                    </div>
+                </a>
+
+                <a href="tel:+923131159582" class="contact-option">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <p class="contact-label">Phone</p>
+                        <p class="contact-value">+92 313 1159582</p>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/muhammad-ali-shafique-6b52b52aa" target="_blank" rel="noopener noreferrer" class="contact-option">
+                    <i class="fab fa-linkedin"></i>
+                    <div>
+                        <p class="contact-label">LinkedIn</p>
+                        <p class="contact-value">Connect with me</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
